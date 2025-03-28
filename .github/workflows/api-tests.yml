@@ -59,6 +59,10 @@ jobs:
           path: api/.mypy_cache
           key: mypy-${{ matrix.python-version }}-${{ runner.os }}-${{ hashFiles('api/poetry.lock') }}
 
+      - name: Run pyright
+        run: |
+          poetry run -C api python -m pyright
+
       - name: Run mypy
         run: dev/run-mypy
 
