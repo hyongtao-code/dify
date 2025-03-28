@@ -173,6 +173,7 @@ types-tqdm = "~4.67.0"
 # [ Lint ] dependency group
 # Required for code style linting
 ############################################################
+pyright = "^1.1.398"
 [tool.poetry.group.lint]
 optional = true
 [tool.poetry.group.lint.dependencies]
